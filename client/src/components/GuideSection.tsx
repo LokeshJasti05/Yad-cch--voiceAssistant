@@ -50,6 +50,9 @@ export default function GuideSection() {
 
         {/* Footer */}
         <div className="mt-32 w-full border-t border-white/5 pt-12 pb-12 text-center">
+          <p className="text-white/40 text-sm font-mono uppercase tracking-widest mb-4">
+             Works only for 10 min — ephemeral developer build
+          </p>
           <p className="text-white/20 text-xs">
              © 2025 OFRADAR Project. All rights reserved.
           </p>

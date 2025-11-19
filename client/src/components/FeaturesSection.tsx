@@ -3,7 +3,7 @@ import { Search, FileText, Code2, ImageIcon } from "lucide-react";
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full py-24 bg-[#050505] text-white overflow-hidden relative">
+    <section className="w-full py-24 bg-transparent text-white overflow-hidden relative">
       {/* Background Ambiance */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[128px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[128px] pointer-events-none" />
