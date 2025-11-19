@@ -11,10 +11,10 @@ export default function FeaturesSection() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="mb-20 md:mb-32 max-w-2xl">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-white/90 to-white/50">
-            Features
+            Engineered for Focus
           </h2>
           <p className="text-white/40 text-lg md:text-xl font-light tracking-wide max-w-md border-l border-white/10 pl-6">
-            Capabilities designed for the modern workflow.
+            Powerful primitives that get out of your way.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ export default function FeaturesSection() {
             <div 
               className="group relative p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-500/10 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
               tabIndex={0}
-              aria-label="Intelligent Web Search"
+              aria-label="Semantic Search"
             >
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               
@@ -34,10 +34,10 @@ export default function FeaturesSection() {
                   <Search className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-medium mb-4 tracking-tight text-white/90 group-hover:text-white transition-colors">
-                  Intelligent Web Search
+                  Semantic Search
                 </h3>
                 <p className="text-white/50 leading-relaxed text-lg group-hover:text-white/70 transition-colors">
-                  Fast, accurate sourcing from across the web.
+                  Retrieve relevant context from across the web with high precision.
                 </p>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function FeaturesSection() {
              <div 
               className="group relative p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/10 md:ml-8 focus:outline-none focus:ring-2 focus:ring-purple-500/50"
               tabIndex={0}
-              aria-label="Generate HTML"
+              aria-label="Interface Generation"
             >
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               
@@ -55,10 +55,10 @@ export default function FeaturesSection() {
                   <Code2 className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-medium mb-4 tracking-tight text-white/90 group-hover:text-white transition-colors">
-                  Generate HTML
+                  Interface Generation
                 </h3>
                 <p className="text-white/50 leading-relaxed text-lg group-hover:text-white/70 transition-colors">
-                  Create semantic markup and ready-to-use web layouts.
+                  Scaffold production-ready, semantic HTML layouts on demand.
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function FeaturesSection() {
             <div 
               className="group relative p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/10 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
               tabIndex={0}
-              aria-label="Export to Text"
+              aria-label="Structured Export"
             >
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               
@@ -79,10 +79,10 @@ export default function FeaturesSection() {
                   <FileText className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-medium mb-4 tracking-tight text-white/90 group-hover:text-white transition-colors">
-                  Export to Text
+                  Structured Export
                 </h3>
                 <p className="text-white/50 leading-relaxed text-lg group-hover:text-white/70 transition-colors">
-                  Instantly save structured data as clean, portable text.
+                  Persist your session data into portable, standard formats instantly.
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function FeaturesSection() {
             <div 
               className="group relative p-8 md:p-10 rounded-3xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl hover:shadow-rose-500/10 md:ml-8 focus:outline-none focus:ring-2 focus:ring-rose-500/50"
               tabIndex={0}
-              aria-label="Image Generation"
+              aria-label="Generative Assets"
             >
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               
@@ -100,10 +100,10 @@ export default function FeaturesSection() {
                   <ImageIcon className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-medium mb-4 tracking-tight text-white/90 group-hover:text-white transition-colors">
-                  Image Generation
+                  Generative Assets
                 </h3>
                 <p className="text-white/50 leading-relaxed text-lg group-hover:text-white/70 transition-colors">
-                  High-quality visuals powered by modern generative models.
+                  Create bespoke, high-fidelity visual assets using modern diffusion models.
                 </p>
               </div>
             </div>
