@@ -51,13 +51,22 @@
   to { transform: rotate(360deg); }
 }
 
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(500%); }
+}
+
 .animate-spin-slow {
   animation: spin var(--spin-speed) linear infinite;
 }
 
+.animate-scan {
+  animation: scan 8s linear infinite;
+}
+
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
-  .animate-spin-slow {
+  .animate-spin-slow, .animate-scan {
     animation: none;
   }
 }
