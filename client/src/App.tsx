@@ -7,12 +7,14 @@ import NotFound from "@/pages/not-found";
 import Hero from "@/components/Hero";
 import PhaseSection from "@/components/PhaseSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import PipelineSection from "@/components/PipelineSection";
 
 function Landing() {
   return (
     <main className="bg-[#050505] min-h-screen text-white selection:bg-emerald-500/30">
       <Hero />
       <FeaturesSection />
+      <PipelineSection />
       <PhaseSection 
         onDownloadClick={() => console.log("Analytics: Download Clicked")}
         onGithubClick={() => console.log("Analytics: GitHub Clicked")}
