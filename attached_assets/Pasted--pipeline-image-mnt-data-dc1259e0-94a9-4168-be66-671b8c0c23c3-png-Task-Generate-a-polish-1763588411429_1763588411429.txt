@@ -1,0 +1,57 @@
+/* pipeline_image: /mnt/data/dc1259e0-94a9-4168-be66-671b8c0c23c3.png */
+/* Task: Generate a polished Pipeline page React component (JSX) styled with Tailwind CSS.
+   Output must be a single file named PipelinePage.jsx and be copy-paste ready for a Create React App / Vite React project with Tailwind configured.
+   The file should include the reference image path above in a top-of-file comment (do not output any other external URLs).
+*/
+
+You are generating a premium, production-ready Pipeline page component. Use the provided image path above as the local image source for the main visual. The generator does NOT need to fetch the file — treat the path as the reference image local URL to embed in the <img src="...">.
+
+--- GOAL ---
+Produce one complete React functional component file (PipelinePage.jsx) wrapped in a top-level <section>. Return only the code file (no explanation). The component must be ready to drop into a React app.
+
+--- MANDATORY REQUIREMENTS ---
+1. Include the exact top-file comment line `/* pipeline_image: /mnt/data/dc1259e0-94a9-4168-be66-671b8c0c23c3.png */` at the top of the file.
+2. Use Tailwind CSS classes only — no external CSS files.
+3. Dark theme aesthetic (deep background, subtle glass or gradient cards), modern and minimal.
+4. Responsive layout:
+   - Mobile: vertical single-column (image stacked).
+   - Tablet/desktop: two-column layout with left side pipeline steps/cards and right side the visual image using the provided path.
+5. Cards / steps:
+   - Provide 4 pipeline step cards (Ingest, Process, Analyze, Deliver). Each card: small inline SVG icon, title (heading), 1-line description.
+   - Cards must be keyboard-focusable (use role="button" or <button> semantics, include focus-visible states).
+   - Use subtle vertical offsets (staggered) to avoid perfect grid symmetry.
+   - Smooth hover and focus animations (transform scale + shadow).
+6. The right-side visual must use the provided local image path as the <img src="..."> exactly as in the top comment.
+7. Accessibility:
+   - Use semantic headings (h2 for the section, h3/h4 for step titles).
+   - Link aria-labelledby / aria-describedby appropriately for cards.
+   - Provide meaningful alt text for the image.
+8. Include a short "Pipeline overview" timeline or ordered list beneath the visual showing the 4 steps (brief lines). Timeline items can be numbered visually but the main cards should avoid big numeric badges.
+9. Keep markup clean and minimal, no debug artifacts, no lorem ipsum.
+10. File header comment should include filename: `/* filename: PipelinePage.jsx */`.
+
+--- CONTENT GUIDELINES (copy/paste exact text where indicated) ---
+- Section heading (use exactly): `Pipeline`
+- Subheading (one line): `A clear, engineered flow from input to impact — visualized and ready to plug into your workflow.`
+- Steps (use these exact titles and short descriptions inside cards and timeline):
+  1. Title: **Ingest**  
+     Description: Collect structured and unstructured inputs — web, files, APIs, and streams.
+  2. Title: **Process**  
+     Description: Normalize, enrich, and transform data with deterministic pipelines.
+  3. Title: **Analyze**  
+     Description: Apply fast search, models, and heuristics to extract actionable signals.
+  4. Title: **Deliver**  
+     Description: Deliver concise outputs where you work — docs, dashboards, or APIs.
+
+--- UX / VISUAL REQUIREMENTS ---
+- Cards: rounded-2xl, 1px subtle border (rgba), soft outer + inset shadows, subtle glass/gradient background. Hover: scale-105, stronger shadow, translate-y small lift. Transition: 180-250ms ease.
+- Stagger offsets: e.g., card 2 -> translate-y-4, card 3 -> -translate-y-2, card 4 -> translate-y-6 (adjust per breakpoint).
+- Right-side image container: rounded-2xl, overflow-hidden, subtle border, small caption/CTA under image ("Drag & drop to replace the image." or similar).
+- Timeline: simple vertical ordered list with small circular markers (styling minimal).
+
+--- DELIVERABLE ---
+Return ONLY the complete PipelinePage.jsx component code. The first lines must be the two comments:
+  /* pipeline_image: /mnt/data/dc1259e0-94a9-4168-be66-671b8c0c23c3.png */
+  /* filename: PipelinePage.jsx */
+
+Do NOT include any extra text or explanation. Ensure the code is clean, lint-friendly, and ready to paste.
