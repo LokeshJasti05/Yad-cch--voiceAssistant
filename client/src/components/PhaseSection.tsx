@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { Github, Download, ExternalLink, Box, Clock, AlertCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 interface PhaseSectionProps {
@@ -70,10 +69,8 @@ export default function PhaseSection({
   };
 
   return (
-    <section ref={ref} className="relative min-h-screen w-full bg-[#080808] text-white py-24 px-4 md:px-12 flex flex-col items-center">
-       {/* Background grid */}
-       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none mask-image-gradient-to-b" />
-
+    <section ref={ref} className="relative min-h-screen w-full bg-transparent text-white py-24 px-4 md:px-12 flex flex-col items-center">
+       
        <div className="max-w-6xl w-full z-10 space-y-16">
           {/* Header Reveal */}
           <motion.div
@@ -205,23 +202,6 @@ export default function PhaseSection({
              </motion.div>
           </div>
        </div>
-       
-       {/* Footer Area */}
-       <motion.footer 
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 1, duration: 1 }}
-          className="mt-32 w-full border-t border-white/5 pt-12 pb-12 text-center"
-       >
-          <div className="flex flex-col items-center gap-4">
-            <p className="text-white/40 text-sm font-mono uppercase tracking-widest">
-               Works only for 10 min — ephemeral developer build
-            </p>
-            <p className="text-white/20 text-xs">
-               © {new Date().getFullYear()} OFRADAR Project. All rights reserved.
-            </p>
-          </div>
-       </motion.footer>
     </section>
   );
 }

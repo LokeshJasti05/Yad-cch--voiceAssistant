@@ -12,18 +12,24 @@ import GuideSection from "@/components/GuideSection";
 
 function Landing() {
   return (
-    <main className="bg-[#050505] min-h-screen text-white selection:bg-emerald-500/30">
-      <Hero />
-      <FeaturesSection />
-      <PipelineSection />
-      <PhaseSection 
-        onDownloadClick={() => console.log("Analytics: Download Clicked")}
-        onGithubClick={() => console.log("Analytics: GitHub Clicked")}
-        onDockerClick={() => console.log("Analytics: Docker Clicked")}
-        onCountdownStart={() => console.log("Analytics: Countdown Started")}
-        onCountdownEnd={() => console.log("Analytics: Countdown Ended")}
-      />
-      <GuideSection />
+    <main className="relative bg-[#050505] min-h-screen text-white selection:bg-emerald-500/30 overflow-hidden">
+      {/* Global Grid Background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none z-0" />
+      
+      {/* Content (z-10 to sit above background) */}
+      <div className="relative z-10">
+        <Hero />
+        <FeaturesSection />
+        <PipelineSection />
+        <PhaseSection 
+          onDownloadClick={() => console.log("Analytics: Download Clicked")}
+          onGithubClick={() => console.log("Analytics: GitHub Clicked")}
+          onDockerClick={() => console.log("Analytics: Docker Clicked")}
+          onCountdownStart={() => console.log("Analytics: Countdown Started")}
+          onCountdownEnd={() => console.log("Analytics: Countdown Ended")}
+        />
+        <GuideSection />
+      </div>
     </main>
   );
 }

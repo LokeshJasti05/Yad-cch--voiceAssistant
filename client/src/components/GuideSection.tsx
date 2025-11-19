@@ -1,9 +1,9 @@
-import { Play, Download, ExternalLink } from "lucide-react";
+import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function GuideSection() {
   return (
-    <section className="w-full py-24 bg-[#050505] text-white relative overflow-hidden">
+    <section className="w-full py-24 bg-transparent text-white relative overflow-hidden">
       {/* Background Ambiance */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none" />
 
@@ -30,50 +30,29 @@ export default function GuideSection() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowFullScreen
               ></iframe>
-              
-              {/* Overlay (Optional - if we wanted a cover image before clicking play, but iframe handles it) */}
             </div>
           </div>
 
           {/* Actions Area */}
-          <div className="flex flex-col gap-8">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-medium text-white">Instant Setup</h3>
-              <p className="text-white/50 leading-relaxed">
-                Get the pre-configured environment with all dependencies included. No complex installation required.
-              </p>
-            </div>
-
+          <div className="flex flex-col gap-8 justify-center h-full">
             <div className="flex flex-col gap-4">
               <Button 
-                className="h-14 text-lg bg-white text-black hover:bg-white/90 transition-all rounded-xl group"
+                className="h-14 text-lg bg-white text-black hover:bg-white/90 transition-all rounded-xl group w-full"
                 onClick={() => window.open('#', '_blank')}
               >
                 <Download className="mr-2 h-5 w-5 group-hover:-translate-y-0.5 transition-transform" />
-                Download Build
+                Download Guide
               </Button>
-              
-              <Button 
-                variant="outline" 
-                className="h-14 text-lg border-white/10 bg-transparent text-white hover:bg-white/5 hover:text-white hover:border-white/20 rounded-xl"
-                onClick={() => window.open('#', '_blank')}
-              >
-                <ExternalLink className="mr-2 h-5 w-5" />
-                View Documentation
-              </Button>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white/5 border border-white/5">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-sm font-medium text-white/80">Latest Version: v0.9.2-beta</span>
-              </div>
-              <p className="text-xs text-white/40 font-mono">
-                SHA: 8f2a...9c1b • Updated 2h ago
-              </p>
             </div>
           </div>
           
+        </div>
+
+        {/* Footer */}
+        <div className="mt-32 w-full border-t border-white/5 pt-12 pb-12 text-center">
+          <p className="text-white/20 text-xs">
+             © 2025 OFRADAR Project. All rights reserved.
+          </p>
         </div>
       </div>
     </section>
