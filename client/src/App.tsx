@@ -12,6 +12,7 @@ function Landing() {
   return (
     <main className="bg-[#050505] min-h-screen text-white selection:bg-emerald-500/30">
       <Hero />
+      <FeaturesSection />
       <PhaseSection 
         onDownloadClick={() => console.log("Analytics: Download Clicked")}
         onGithubClick={() => console.log("Analytics: GitHub Clicked")}
@@ -19,7 +20,6 @@ function Landing() {
         onCountdownStart={() => console.log("Analytics: Countdown Started")}
         onCountdownEnd={() => console.log("Analytics: Countdown Ended")}
       />
-      <FeaturesSection />
     </main>
   );
 }
