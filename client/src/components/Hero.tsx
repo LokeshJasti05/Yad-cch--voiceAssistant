@@ -39,7 +39,7 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="text-sm md:text-xl text-white/60 font-mono tracking-widest uppercase"
             >
-              delivery what you need not what you want
+              Not just what you seek — what truly serves you
             </motion.p>
           </motion.div>
         ) : (
