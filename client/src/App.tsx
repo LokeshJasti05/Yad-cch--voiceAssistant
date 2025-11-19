@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Hero from "@/components/Hero";
 import PhaseSection from "@/components/PhaseSection";
+import FeaturesSection from "@/components/FeaturesSection";
 
 function Landing() {
   return (
@@ -18,6 +19,7 @@ function Landing() {
         onCountdownStart={() => console.log("Analytics: Countdown Started")}
         onCountdownEnd={() => console.log("Analytics: Countdown Ended")}
       />
+      <FeaturesSection />
     </main>
   );
 }

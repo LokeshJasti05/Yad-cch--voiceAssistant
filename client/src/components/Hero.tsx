@@ -74,8 +74,8 @@ export default function Hero() {
                   <span className="text-xs font-mono text-emerald-500 mb-4 tracking-[0.3em] uppercase border border-emerald-500/20 px-3 py-1 rounded-full bg-emerald-500/5 backdrop-blur-sm">
                     System Online
                   </span>
-                  <h1 className="text-8xl md:text-[12rem] leading-none font-bold font-display tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white/80 to-transparent select-none mix-blend-overlay">
-                    OFF / RADAR
+                  <h1 className="text-8xl md:text-[15rem] leading-none font-bold font-display tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white/80 to-transparent select-none mix-blend-overlay">
+                    YANI
                   </h1>
                </motion.div>
 
