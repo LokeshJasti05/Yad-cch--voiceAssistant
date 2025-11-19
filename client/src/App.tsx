@@ -8,7 +8,7 @@ import Hero from "@/components/Hero";
 import PhaseSection from "@/components/PhaseSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import PipelineSection from "@/components/PipelineSection";
-import pipelineImage from "@assets/image_1763585855428.png";
+import pipelineImage from "@assets/image_1763586172354.png";
 
 function Landing() {
   return (
