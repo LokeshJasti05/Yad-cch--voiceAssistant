@@ -113,7 +113,7 @@ export default function Hero() {
                     y="100"
                     textAnchor="middle"
                     dominantBaseline="central"
-                    fill="rgba(255, 255, 255, 0.9)"
+                    fill="rgba(255, 255, 255)"
                     fontSize="24"
                     fontFamily="'JetBrains Mono', monospace"
                     fontWeight="700"
@@ -134,7 +134,7 @@ export default function Hero() {
                  className="flex flex-col items-center"
                >
                   <span className="text-xs font-mono text-emerald-500 mb-4 tracking-[0.3em] uppercase border border-emerald-500/20 px-3 py-1 rounded-full bg-emerald-500/5 backdrop-blur-sm">
-                    System Online
+                  DEV Testing READY
                   </span>
                   <h1 className="text-8xl md:text-[15rem] leading-none font-bold font-display tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white/80 to-transparent select-none mix-blend-overlay">
                     YANI
