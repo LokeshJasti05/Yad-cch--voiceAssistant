@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center bg-[#050505] text-white">
       {/* Radial Gradient Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent pointer-events-none" />
 
       <AnimatePresence mode="wait">
         {stage === "initial" ? (
