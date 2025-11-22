@@ -152,7 +152,7 @@ export default function PhaseSection({
                      </div>
                      <div>
                         <h3 className="text-xl font-semibold mb-1">View on Docker Hub</h3>
-                        <p className="text-sm text-white/50 font-mono">Pull: ofradar/phase0</p>
+                        <p className="text-sm text-white/50 font-mono">Pull: Yani/phase0</p>
                      </div>
                   </Card>
                 </a>

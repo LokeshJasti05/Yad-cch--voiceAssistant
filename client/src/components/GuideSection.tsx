@@ -54,7 +54,7 @@ export default function GuideSection() {
              Works only for 10 min — ephemeral developer build
           </p>
           <p className="text-white/20 text-xs">
-             © 2025 OFRADAR Project. All rights reserved.
+             © 2025 Yadṛcchā Project. All rights reserved.
           </p>
         </div>
       </div>
