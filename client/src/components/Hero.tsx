@@ -63,6 +63,68 @@ export default function Hero() {
                <div className="absolute w-[60vh] h-[60vh] md:w-[80vh] md:h-[80vh] rounded-full bg-[conic-gradient(from_0deg,transparent_0_300deg,white_360deg)] opacity-5 animate-spin-slow mix-blend-overlay" style={{ animationDuration: '4s' }} />
             </div>
 
+            {/* Small WIP Rotating Disc */}
+            <div className="absolute top-20 right-8 md:top-24 md:right-16 pointer-events-none z-30">
+              <div className="w-32 h-32 md:w-40 md:h-40 relative opacity-60">
+                <svg className="w-full h-full" viewBox="0 0 200 200">
+                  <defs>
+                    <path
+                      id="wipTextPath"
+                      d="M 100,100 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"
+                    />
+                  </defs>
+                  {/* Rotating group for border and border text */}
+                  <g className="animate-spin-slow" style={{ animationDuration: '15s', transformOrigin: '100px 100px' }}>
+                    {/* Outer circle */}
+                    <circle
+                      cx="100"
+                      cy="100"
+                      r="95"
+                      fill="none"
+                      stroke="rgba(255, 255, 255, 0.2)"
+                      strokeWidth="1.5"
+                    />
+                    {/* Inner circle */}
+                    <circle
+                      cx="100"
+                      cy="100"
+                      r="85"
+                      fill="none"
+                      stroke="rgba(255, 255, 255, 0.1)"
+                      strokeWidth="1"
+                      strokeDasharray="3 3"
+                    />
+                    {/* Text path for "WIP WORK IN PROGRESS" */}
+                    <text
+                      fill="rgba(255, 255, 255, 0.8)"
+                      fontSize="10"
+                      fontFamily="'JetBrains Mono', monospace"
+                      fontWeight="400"
+                      letterSpacing="0.15em"
+                    >
+                      <textPath href="#wipTextPath" startOffset="0%">
+                        WIP • WORK IN PROGRESS • WIP • WORK IN PROGRESS • WIP • WORK IN PROGRESS • 
+                      </textPath>
+                    </text>
+                  </g>
+                  {/* Center "WIP" text - static, doesn't rotate */}
+                  <text
+                    x="100"
+                    y="100"
+                    textAnchor="middle"
+                    dominantBaseline="central"
+                    fill="rgba(255, 255, 255, 0.9)"
+                    fontSize="24"
+                    fontFamily="'JetBrains Mono', monospace"
+                    fontWeight="700"
+                    letterSpacing="0.1em"
+                  >
+                    WIP
+                  </text>
+                </svg>
+              </div>
+            </div>
+
             {/* Content */}
             <div className="relative z-20 text-center space-y-2">
                <motion.div
