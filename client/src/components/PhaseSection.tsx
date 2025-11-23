@@ -15,9 +15,9 @@ interface PhaseSectionProps {
 }
 
 export default function PhaseSection({
-  githubUrl = "https://github.com/your-org/ofradar-phase0",
+  githubUrl = "https://github.com/LokeshJasti05/voiceAssistant",
   dockerHubUrl = "https://hub.docker.com/r/ofradar/phase0",
-  zipUrl = "/assets/project-phase0.zip",
+  zipUrl = "/assets/",
   onDownloadClick,
   onGithubClick,
   onDockerClick,
@@ -120,6 +120,7 @@ export default function PhaseSection({
                         <div className="p-3 rounded-lg bg-white/5 text-white group-hover:bg-white/10 transition-colors">
                            <Github className="w-8 h-8" />
                         </div>
+                        
                         <ExternalLink className="w-5 h-5 text-white/20 group-hover:text-white/60" />
                      </div>
                      <div>
