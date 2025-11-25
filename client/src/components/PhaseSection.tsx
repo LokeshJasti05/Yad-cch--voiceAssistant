@@ -16,7 +16,7 @@ interface PhaseSectionProps {
 
 export default function PhaseSection({
   githubUrl = "https://github.com/LokeshJasti05/voiceAssistant",
-  dockerHubUrl = "https://hub.docker.com/r/ofradar/phase0",
+  dockerHubUrl = "https://hub.docker.com/repository/docker/lokeshjasti52/voice_agent/general",
   zipUrl = "/assets/",
   onDownloadClick,
   onGithubClick,
