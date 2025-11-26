@@ -9,7 +9,7 @@ import PhaseSection from "@/components/PhaseSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import PipelineSection from "@/components/PipelineSection";
 import GuideSection from "@/components/GuideSection";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 function Landing() {
   return (
