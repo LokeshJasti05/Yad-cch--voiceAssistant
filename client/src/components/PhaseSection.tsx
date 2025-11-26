@@ -62,7 +62,7 @@ export default function PhaseSection({
 
   const handleDownload = () => {
     onDownloadClick?.();
-    startCountdown();
+    
     
     // Trigger download manually if needed or let the anchor tag handle it
     console.log("Download initiated");
