@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import { Analytics } from "@vercel/analytics/next"
 
 export default function Hero() {
   const [stage, setStage] = useState<"initial" | "hero">("initial");
@@ -18,7 +17,7 @@ export default function Hero() {
     <section className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center bg-[#050505] text-white">
       {/* Radial Gradient Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent pointer-events-none" />
-      <Analytics/>
+   
       <AnimatePresence mode="wait">
         {stage === "initial" ? (
           <motion.div
