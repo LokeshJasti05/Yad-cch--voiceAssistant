@@ -26,8 +26,6 @@ function Landing() {
           onDownloadClick={() => console.log("Analytics: Download Clicked")}
           onGithubClick={() => console.log("Analytics: GitHub Clicked")}
           onDockerClick={() => console.log("Analytics: Docker Clicked")}
-          onCountdownStart={() => console.log("Analytics: Countdown Started")}
-          onCountdownEnd={() => console.log("Analytics: Countdown Ended")}
         />
         <GuideSection />
       </div>
